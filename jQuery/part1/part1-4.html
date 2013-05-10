@@ -1,0 +1,101 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS manipulation</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/jquery-1.9.1.min.js"
+                type="text/javascript"></script>
+        <link type='text/css' rel='stylesheet' 
+              href='css/style.css'>
+    </head>
+    <body>
+        <div id="header">
+            <h1>CSS manipulation</h1>
+        </div>
+        <div id="content">
+            <div class="row">
+                <p class="text">
+                    Uz pomoć jQuery-ja možete manipulisati CSS atributama i 
+                    klasama selektovanih HTML elemenata.
+                </p>
+                <p class="text">
+                    Kompletna lista funkcija za CSS manipulaciju se može naći na 
+                    <a href="http://api.jquery.com/category/css/">
+                        http://api.jquery.com/category/css/
+                    </a>
+                </p>
+            </div>
+            <h2>Reading CSS attributes</h2>
+            <div class="row">
+                <p class="text">
+                    Sledeći primer pokazuje kako možemo izvući boju pozadine 
+                    nekog elementa
+                </p>
+                <pre class="code">
+var bcgColor = $('div#theDiv').css('background-color');
+                </pre>
+            </div>
+            <h2>Changing CSS attributes</h2>
+            <div class="row">
+                <p class="text">
+                    U sledećem primeru vidimo kako se setuje boja pozadine nekog 
+                    elementa
+                </p>
+                <pre class="code">
+$('div#theDiv').css('background-color', '#ff0011');
+                </pre>
+                <p class="text">
+                    Drugi parametar css() funkcije je vrednos na koju setujem
+                    css atribut (prvi parametar).
+                </p>
+                <p class="text">
+                    Jednim pozivom css() funkcije možemo setovati više atributa 
+                    koristeći JavaScript objekat
+                </p>
+                <pre class="code">
+$('div#theDiv').css(
+    {
+        'background-color' : '#ff0011',
+        'border' : '1px sold #0044ff'
+    }
+);
+                </pre>
+            </div>
+            <h2>CSS classes</h2>
+            <div class="row">
+                <p class="text">
+                    Uz pomoće jQuery-ja moguće je menja ti klase html elemenata.
+                </p>
+                <pre class="code">
+$('div#theDiv').addClass('newClass'); //dodavanje klase
+$('div#theDiv').addClass('newClass1 newClass2'); //dodavanje više klasa
+                </pre>
+                <p class="text">
+                    Moguće je i "togglovati" klasu. To znači dodati je ako je 
+                    nema i izbrisati je ako je ima.
+                </p>
+                <pre class="code">
+$('div#theDiv').toggleClass('newClass');
+$('div#theDiv').toggleClass('newClass1 newClass2');
+                </pre>
+                <p class="text">
+                    hasClass() metoda proverava da li element ima zadatu klasu
+                </p>
+                <pre class="code">
+if($('div#theDiv').hasClass('newClass')){
+    //TODO
+};
+                </pre>
+            </div>
+        </div>
+        <div id="footer">
+            <p class="text">
+                <a href="index.html">Nazad</a>
+            </p>
+        </div>
+    </body>
+</html>

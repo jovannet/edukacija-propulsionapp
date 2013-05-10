@@ -10,7 +10,7 @@ root {
     display: block;
 }
 
-#header, #content {
+#header, #content, #footer {
     margin: auto;
     width: 70%;
 }
@@ -19,8 +19,9 @@ root {
     text-align: center;
 }
 
-#content {
+#content, #footer{
     border: #ADD8E6  1px solid;
+    margin-bottom: 15px;
 }
 
 #content h2 {
@@ -31,6 +32,7 @@ root {
 
 .row p, .row pre {
     margin: 15px;
+    font-size: 18px;
 }
 
 .text {
