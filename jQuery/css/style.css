@@ -1,0 +1,43 @@
+body {
+	background-color: #E0E0E0;
+}
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+.label {
+	width: 100px;
+	float: left;
+	height: 50px;
+}
+.input {
+	width: 200px;
+	float:left;
+	height: 50px;
+	margin-top: 12px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+li {
+	padding-left: 0.5em;
+}
+.handle {
+	background: url('../images/list.png') no-repeat center;
+	display: block;
+	float: left;
+	width: 10px;
+	height: 11px;
+}
+.collapsed {
+	background: url('../images/minus.png') no-repeat center;		
+	cursor: pointer;
+}
+.expanded {
+	background: url('../images/plus.gif') no-repeat center;
+	cursor: pointer;
+}
