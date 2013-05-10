@@ -1,0 +1,37 @@
+body {
+	background-color: #E0E0E0;
+}
+body, td {
+    Font-Family: Arial;
+    Font-Size: 12px;
+    Font-Weight-x: bold;
+    Color-x: #002d62;
+}
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+.datagridHeadCell{
+    font-family: Arial;
+    font-weight: bold;
+    background-color : #eeeeee;
+}
+.datagridOddRow {
+	background-color : #ccffcc;
+    background-color-x : #ffffff;
+    overflow-x : hidden;
+}
+.datagridEvenRow {
+	background-color : #ffffff;
+}
+.datagridCell {
+    overflow : hidden;
+    float    : left;
+    height   : 20px;
+    width    : 50px;
+    white-space:nowrap;
+}
+.datagridSelectedRow {
+    background-color : #ccccff;
+}
