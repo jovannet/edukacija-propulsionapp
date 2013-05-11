@@ -48,13 +48,6 @@ $(document).ready(function(){
             alert('FADED');
         });
     });
-
-    //fade to
-    $('#fadeToButton').on('click', function() {
-    	$('#fadeToCode').fadeTo(2500, 0.5, function(){
-        	alert('FADED TO 0.5');
-    	});
-     });
     
     //animate
     $('#animateButton').on('click', function() {
