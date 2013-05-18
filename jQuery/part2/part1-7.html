@@ -1,0 +1,80 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/jquery-1.9.1.min.js"
+                type="text/javascript"></script>
+        <script src="js/methods.js"
+                type="text/javascript"></script>
+        <link type='text/css' rel='stylesheet' 
+              href='css/style.css'>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Methods</h1>
+        </div>
+        <div id="content">
+            <div class="row">
+                <p class="text">
+                    Puna lista efekata može se naći na 
+                    <a href="http://api.jquery.com/category/effects/">
+                        http://api.jquery.com/category/effects/
+                    </a>
+                </p>
+                <ul>
+					<li>ducky
+					</li>
+                    <li>cenko
+                    </li>
+                    <li class="preDjomle">djomla
+                    </li>
+                    <li>matidza
+                    </li>
+                    <li>marija janovic
+                    </li>  
+                    <li>elena (mora da dobije nadimak)
+					</li>
+                    <li>madic
+                    </li>    
+                    <li> Mazlum
+                    </li> 
+                </ul>
+            </div>
+                <pre class="code" id="showHideCode">
+	//filter
+    $('li').filter(function(index) {
+		return index % 3 == 2;
+	}).css('background-color', 'red');
+//prevAll
+    $('li.preDjomle').prevAll().css('background-color', 'blue');
+	</pre>		
+            <h2 id="showHide">Timeout</h2>
+            <div class="row">
+                <p class="text">
+                    <button id="start">start</button>
+                </p>
+                <p class="text">
+                    <button id="stop">stop</button>
+                </p>
+                <pre class="code" id="showHideCode">
+	$(document).ready(function() { 
+		$("#btnFade").bind("click",function() {
+		  setTimeout(function() { 
+			$('#dvData').fadeOut();}, 2000); 
+	  });
+	});
+                </pre>
+            </div>
+		</div>
+        <div id="footer">
+            <p class="text">
+                <a href="index.html" id="down">Nazad</a>
+            </p>
+        </div>
+    </body>
+</html>
